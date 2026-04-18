@@ -3,136 +3,220 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Steven Moleshi - UI Designer</title>
+  <title>Steven Moleshi — Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Header Section -->
-  <header class="navbar">
-    <div class="logo">NEVETS-developer</div>
-    <nav aria-label="Main Navigation">
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-      </ul>
-    </nav>
-    <a href="#contact" class="contact-btn">Contact</a>
-  </header>
 
-  <!-- Hero Section -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <nav>
+    <a href="#home" class="nav-logo">NEVETS</a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#portfolio">Work</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Contact</a>
+  </nav>
+
   <main id="home" class="hero">
-    <div class="hero-content">
-      <h1>STEVEN MOLESHI<br><span>Frontend  | back-end developer</span></h1>
-      <p>
-        I'm a dedicated front-end developer with a creative flair and a penchant for
-        turning lines of code into captivating online experiences. My journey in
-        the digital realm began years ago, and I've since honed my skills in
-        front-end.
+    <div class="hero-left">
+      <div class="hero-tag">Available for work</div>
+      <h1>STEVEN<br>MOLE<span>SHI</span></h1>
+      <p class="hero-desc">
+        Full-stack developer crafting purposeful digital experiences — from pixel-perfect frontends to scalable back-end systems.
       </p>
+      <div class="hero-actions">
+        <a href="#portfolio" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-ghost">Get in touch</a>
+      </div>
+      <div class="hero-stat-row">
+        <div class="hero-stat"><strong>5+</strong><span>Languages</span></div>
+        <div class="hero-stat"><strong>6+</strong><span>Projects</span></div>
+        <div class="hero-stat"><strong>∞</strong><span>Curiosity</span></div>
+      </div>
     </div>
-    <div class="hero-image">
-      <img src="nevets.PNG" alt="Steven Moleshi" />
+    <div class="hero-visual">
+      <div class="hero-img-frame">
+        <img src="nevets.PNG" alt="Steven Moleshi" />
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      Scroll to explore
     </div>
   </main>
 
-  <!-- About Section -->
-  <section id="about" class="about">
-    <div class="about-image">
+  <section id="about" class="about reveal">
+    <div class="about-img-wrap">
       <img src="nevets.PNG" alt="About Steven Moleshi" />
+      <div class="about-img-badge">Full-Stack<br>Developer</div>
     </div>
-    <div class="about-text">
-      <h2>About Me</h2>
-      <p>
-       I am driven by a mission to empower people and organizations to achieve more through technology. I believe that innovation should be purposeful and used as a force for good, contributing to meaningful impact both today and in the future. I approach each day with curiosity and a growth mindset, embracing continuous learning and self-improvement. I value authenticity, collaboration, and supporting others, understanding that shared success strengthens everyone. I remain open to new perspectives, actively challenge my own assumptions, and strive to create inclusive environments where diverse ideas can thrive. For me, impact is not just a goal, it is a responsibility.
+    <div class="about-content">
+      <div class="section-label">About me</div>
+      <h2 class="about-title">Building with purpose,<br>driven by impact</h2>
+      <p class="about-text">
+        I am driven by a mission to empower people and organizations to achieve more through technology. I believe innovation should be purposeful — a force for good contributing to meaningful impact. I approach each day with curiosity and a growth mindset, embracing continuous learning, collaboration, and authentic connection.
       </p>
-      <a href="#contact" class="contact-btn">Read More</a>
+      <a href="#contact" class="btn-primary">Let's Connect</a>
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section id="services" class="services">
-    <h2>Languages</h2>
-    <div class="services-container">
-      <div class="service-card">
-        <h3>JAVA</h3>
-        <p>Creating intuitive and visually appealing user interfaces.</p>
+  <section id="skills" class="skills-section reveal">
+    <div class="section-label">My toolkit</div>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon">01 / JAVA</div>
+        <div class="skill-name">Java</div>
+        <div class="skill-desc">Robust object-oriented applications and enterprise-grade systems.</div>
       </div>
-      <div class="service-card">
-        <h3>C++</h3>
-        <p>for a fast and efficient back-end for mobile games and web applications.</p>
+      <div class="skill-card">
+        <div class="skill-icon">02 / C++</div>
+        <div class="skill-name">C++</div>
+        <div class="skill-desc">High-performance back-end for mobile games and demanding applications.</div>
       </div>
-      <div class="service-card">
-        <h3>Javascript</h3>
-        <p>Developing responsive websites with unque behavior and user-friendlyinteractivity .</p>
+      <div class="skill-card">
+        <div class="skill-icon">03 / JS</div>
+        <div class="skill-name">JavaScript</div>
+        <div class="skill-desc">Dynamic, interactive, and user-friendly web experiences.</div>
       </div>
-      <div class="service-card">
-        <h3>Python</h3>
-        <p>Ensuring user-friendly interfaces and well operational back-end.</p>
+      <div class="skill-card">
+        <div class="skill-icon">04 / PY</div>
+        <div class="skill-name">Python</div>
+        <div class="skill-desc">Clean interfaces and well-structured back-end logic.</div>
       </div>
-      <div class="service-card">
-        <h3>React JS</h3>
-        <p>Creating scalable and efficient web applications tailored to your needs.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="portfolio" class="projects">
-    <h2>My Work & Projects</h2>
-    <div class="projects-container">
-      <div class="project-card">
-        <img src="image.png" alt="Project 1">
-        <h3>University Website</h3>
-        <p>A university website built with HTML, CSS, and JavaScript.</p>
-        <a href="https://nevets-developer.github.io/a-university-website/" class="view-btn">View Project</a>
-      </div>
-      <div class="project-card">
-        <img src="image copy.png" alt="Project 2">
-        <h3>Portfolio Website</h3>
-        <p>My portfolio website using HTML, CSS, and JavaScript.</p>
-        <a href="https://nevets-developer.github.io/"  class="view-btn">View Project</a>
-      </div>
-      <div class="project-card">
-        <img src="project3.jpg" alt="Project 3">
-        <h3>Task Manager</h3>
-        <p>A task manager application built with Java and Spring Boot.</p>
-        <a href="https://example.com/task-manager" target="_blank" class="view-btn">View Project</a>
-      </div>
-      <div class="project-card">
-        <img src="project4.jpg" alt="Project 4">
-        <h3>Blog Platform</h3>
-        <p>A blog platform built with Django and Python.</p>
-        <a href="https://example.com/blog-platform" target="_blank" class="view-btn">View Project</a>
-      </div>
-      <div class="project-card">
-        <img src="project5.jpg" alt="Project 5">
-        <h3>Weather App</h3>
-        <p>A weather app using JavaScript and OpenWeather API.</p>
-        <a href="https://example.com/weather-app" target="_blank" class="view-btn">View Project</a>
-      </div>
-      <div class="project-card">
-        <img src="project6.jpg" alt="Project 6">
-        <h3>Real-Time Chat App</h3>
-        <p>A real-time chat application built with Socket.IO and Node.js.</p>
-        <a href="https://example.com/chat-app" target="_blank" class="view-btn">View Project</a>
+      <div class="skill-card">
+        <div class="skill-icon">05 / REACT</div>
+        <div class="skill-name">React JS</div>
+        <div class="skill-desc">Scalable component-driven web applications.</div>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="Stevenmoleshi94@gmail.com" aria-label="Email Steven Moleshi">stevenmoleshi94@gmail.com</a></p>
-    <p>Tiktok: <a href="https://www.tiktok.com/@steven_moleshi?_r=1&_t=ZS-95eGEoZdPlI" target="_blank" aria-label="Visit Steven's Instagram">@steven_moleshi</a></p>
-    <p>GitHub: <a href="https://github.com/NEVETS-developer" target="_blank" aria-label="Visit Steven's GitHub">NEVETS_developer</a></p>
-    <p>WhatsApp: <a href="https://wa.me/1234567890" target="_blank" aria-label="Message Steven on WhatsApp">+260 776751196</a></p>
+  <section id="portfolio" class="projects-section reveal">
+    <div class="projects-header">
+      <div>
+        <div class="section-label">Selected work</div>
+        <h2 class="projects-title">My Work &<br>Projects</h2>
+      </div>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-img-placeholder" style="overflow:hidden;">
+          <img src="image.png" alt="University Website" class="project-img" onerror="this.parentElement.innerHTML='University Website'" />
+        </div>
+        <div class="project-body">
+          <div class="project-num">01 — HTML / CSS / JS</div>
+          <div class="project-name">University Website</div>
+          <p class="project-desc">A full university website built with semantic HTML, CSS, and JavaScript.</p>
+          <a href="https://nevets-developer.github.io/a-university-website/" target="_blank" class="project-link">View Project</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-img-placeholder" style="overflow:hidden;">
+          <img src="image copy.png" alt="Portfolio Website" class="project-img" onerror="this.parentElement.innerHTML='Portfolio Website'" />
+        </div>
+        <div class="project-body">
+          <div class="project-num">02 — HTML / CSS / JS</div>
+          <div class="project-name">Portfolio Website</div>
+          <p class="project-desc">My personal developer portfolio showcasing work and skills.</p>
+          <a href="https://nevets-developer.github.io/" target="_blank" class="project-link">View Project</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-img-placeholder" style="overflow:hidden;">
+          <img src="project3.jpg" alt="Task Manager" class="project-img" onerror="this.parentElement.textContent='Task Manager'" />
+        </div>
+        <div class="project-body">
+          <div class="project-num">03 — Java / Spring Boot</div>
+          <div class="project-name">Task Manager</div>
+          <p class="project-desc">A full-featured task management application with Spring Boot backend.</p>
+          <a href="https://example.com/task-manager" target="_blank" class="project-link">View Project</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-img-placeholder" style="overflow:hidden;">
+          <img src="project4.jpg" alt="Blog Platform" class="project-img" onerror="this.parentElement.textContent='Blog Platform'" />
+        </div>
+        <div class="project-body">
+          <div class="project-num">04 — Django / Python</div>
+          <div class="project-name">Blog Platform</div>
+          <p class="project-desc">A content management and blogging platform built with Django.</p>
+          <a href="https://example.com/blog-platform" target="_blank" class="project-link">View Project</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-img-placeholder" style="overflow:hidden;">
+          <img src="project5.jpg" alt="Weather App" class="project-img" onerror="this.parentElement.textContent='Weather App'" />
+        </div>
+        <div class="project-body">
+          <div class="project-num">05 — JS / OpenWeather API</div>
+          <div class="project-name">Weather App</div>
+          <p class="project-desc">Real-time weather data app using JavaScript and the OpenWeather API.</p>
+          <a href="https://example.com/weather-app" target="_blank" class="project-link">View Project</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-img-placeholder" style="overflow:hidden;">
+          <img src="project6.jpg" alt="Chat App" class="project-img" onerror="this.parentElement.textContent='Real-Time Chat'" />
+        </div>
+        <div class="project-body">
+          <div class="project-num">06 — Node.js / Socket.IO</div>
+          <div class="project-name">Real-Time Chat App</div>
+          <p class="project-desc">Live multi-user chat application built with Node.js and Socket.IO.</p>
+          <a href="https://example.com/chat-app" target="_blank" class="project-link">View Project</a>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- Footer Section -->
-  <footer class="footer">
-    <p>&copy; 2025 Steven Moleshi. All rights reserved.</p>
+  <section id="contact" class="contact-section reveal">
+    <div>
+      <div class="section-label">Get in touch</div>
+      <h2 class="contact-big">Let's build<br>something<br><span>great.</span></h2>
+      <p class="contact-sub">Open to new opportunities, collaborations, and interesting conversations. Don't hesitate to reach out.</p>
+    </div>
+    <div class="contact-links">
+      <a href="mailto:stevenmoleshi94@gmail.com" class="contact-link-item">
+        <div>
+          <div class="link-platform">Email</div>
+          <div class="link-value">stevenmoleshi94@gmail.com</div>
+        </div>
+        <span class="link-arrow">↗</span>
+      </a>
+      <a href="https://github.com/NEVETS-developer" target="_blank" class="contact-link-item">
+        <div>
+          <div class="link-platform">GitHub</div>
+          <div class="link-value">NEVETS-developer</div>
+        </div>
+        <span class="link-arrow">↗</span>
+      </a>
+      <a href="https://wa.me/260776751196" target="_blank" class="contact-link-item">
+        <div>
+          <div class="link-platform">WhatsApp</div>
+          <div class="link-value">+260 776 751 196</div>
+        </div>
+        <span class="link-arrow">↗</span>
+      </a>
+      <a href="https://www.tiktok.com/@steven_moleshi" target="_blank" class="contact-link-item">
+        <div>
+          <div class="link-platform">TikTok</div>
+          <div class="link-value">@steven_moleshi</div>
+        </div>
+        <span class="link-arrow">↗</span>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2025 Steven Moleshi</span>
+    <span>Built with passion — Lusaka, Zambia</span>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
